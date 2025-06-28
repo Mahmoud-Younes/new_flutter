@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "525803456589",
+    "project_id": "tourism-acaf8",
+    "storage_bucket": "tourism-acaf8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525803456589:android:563616dc9d752026967404",
+        "android_client_info": {
+          "package_name": "com.example.new_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSAQeWoA8AwL4kfvlRytootwGnxL9UQzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
