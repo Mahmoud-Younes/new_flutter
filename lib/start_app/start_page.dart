@@ -5,13 +5,14 @@ import 'package:new_flutter/features/screens/home.dart';
 import 'package:new_flutter/features/Profile/profile_page.dart';
 
 class IconButtomBar extends StatelessWidget {
-  const IconButtomBar(
-      {super.key,
-      required this.text,
-      required this.icon,
-      required this.selected,
-      required this.onPressed,
-      required this.selectedIcon});
+  const IconButtomBar({
+    super.key,
+    required this.text,
+    required this.icon,
+    required this.selected,
+    required this.onPressed,
+    required this.selectedIcon,
+  });
 
   final String text;
   final IconData icon, selectedIcon;
@@ -25,16 +26,10 @@ class IconButtomBar extends StatelessWidget {
       children: [
         IconButton(
           onPressed: onPressed,
-          icon: selected
-              ? Icon(
-                  selectedIcon,
-                  color: AppColors.amber,
-                  size: 24,
-                )
-              : Icon(
-                  icon,
-                  size: 30,
-                ),
+          icon:
+              selected
+                  ? Icon(selectedIcon, color: AppColors.amber, size: 24)
+                  : Icon(icon, size: 30),
         ),
         Text(
           textAlign: TextAlign.center,
@@ -45,7 +40,7 @@ class IconButtomBar extends StatelessWidget {
             fontWeight: selected ? FontWeight.bold : FontWeight.normal,
             color: selected ? AppColors.amber : AppColors.black,
           ),
-        )
+        ),
       ],
     );
   }
@@ -82,15 +77,16 @@ class _StartAppState extends State<StartApp> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 IconButtomBar(
-                    text: "Chat",
-                    icon: Icons.chat,
-                    selectedIcon: Icons.chat,
-                    selected: StartApp.selectedPage == 1,
-                    onPressed: () {
-                      setState(() {
-                        StartApp.selectedPage = 1;
-                      });
-                    }),
+                  text: "Analysis",
+                  icon: Icons.image_search_outlined,
+                  selectedIcon: Icons.chat,
+                  selected: StartApp.selectedPage == 1,
+                  onPressed: () {
+                    setState(() {
+                      StartApp.selectedPage = 1;
+                    });
+                  },
+                ),
                 IconButtomBar(
                   text: "Home",
                   icon: Icons.home,

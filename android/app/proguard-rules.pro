@@ -1,8 +1,15 @@
+# قواعد أساسية فقط
+-keep class io.flutter.app.** { *; }
+-keep class io.flutter.plugin.**  { *; }
+-keep class io.flutter.util.**  { *; }
+-keep class io.flutter.view.**  { *; }
+-keep class io.flutter.**  { *; }
+-keep class io.flutter.plugins.**  { *; }
+
 # TensorFlow Lite
 -keep class org.tensorflow.lite.** { *; }
--keep class org.tensorflow.lite.gpu.** { *; }
--keep class org.tensorflow.lite.support.** { *; }
-
-# Additional TensorFlow Lite rules
 -dontwarn org.tensorflow.lite.**
--dontwarn org.tensorflow.lite.gpu.**
+
+# قواعد عامة
+-dontwarn **
+-ignorewarnings

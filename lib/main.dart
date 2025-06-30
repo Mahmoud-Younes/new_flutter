@@ -1,16 +1,17 @@
-import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:onesignal_flutter/onesignal_flutter.dart';
+
 import 'package:new_flutter/core/routes/app_routes.dart';
 import 'package:new_flutter/core/utils/location_permission_handler.dart';
 import 'package:new_flutter/core/widgets/contants.dart';
 import 'package:new_flutter/features/auth/presentation/pages/login/widgets/login.dart';
 import 'package:new_flutter/firebase_options.dart';
 import 'package:new_flutter/start_app/start_page.dart';
-import 'package:onesignal_flutter/onesignal_flutter.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();

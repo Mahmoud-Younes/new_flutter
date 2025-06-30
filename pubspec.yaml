@@ -31,14 +31,11 @@ dependencies:
   cached_network_image: ^3.4.1
   carousel_slider: ^5.1.1
   cloud_firestore: ^5.6.9
-  cupertino_icons: ^1.0.8
-  dots_indicator: ^4.0.1
   firebase_auth: ^5.6.0
   firebase_core: ^3.14.0
   flutter:
     sdk: flutter
-  flutter_launcher_icons: ^0.14.4
-  flutter_local_notifications: ^19.2.1
+  flutter_local_notifications: ^19.3.0
   geolocator: ^14.0.1
   get: ^4.7.2
   google_maps_flutter: ^2.12.3
@@ -52,9 +49,11 @@ dependencies:
   smooth_page_indicator: ^1.2.1
   tflite_flutter: ^0.11.0
   webview_flutter: ^4.13.0
+  webview_flutter_android: ^4.7.0
+  webview_flutter_wkwebview: ^3.22.0
 
 dev_dependencies:
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
   flutter_test:
     sdk: flutter
 
@@ -82,7 +81,6 @@ flutter:
     - assets/images/onboarding/
     - assets/images/app/
     - assets/images/home/
-  
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
   # For details regarding adding assets from package dependencies, see

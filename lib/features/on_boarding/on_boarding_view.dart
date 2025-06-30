@@ -1,12 +1,13 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
 import 'package:new_flutter/core/extensions/context_extension.dart';
 import 'package:new_flutter/core/routes/app_routes.dart';
 import 'package:new_flutter/core/style/app_images.dart';
 import 'package:new_flutter/core/style/colors.dart';
 import 'package:new_flutter/features/on_boarding/model/on_board_model.dart';
 import 'package:new_flutter/start_app/start_page.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnBoardingview extends StatefulWidget {
   const OnBoardingview({super.key});
